@@ -7,10 +7,10 @@ import (
 	"fmt"
 	"log"
 
-	"driverModule/dao/ent/migrate"
+	"github.com/LiuKaHo/driverModule/dao/ent/migrate"
 
-	"driverModule/dao/ent/order"
-	"driverModule/dao/ent/product"
+	"github.com/LiuKaHo/driverModule/dao/ent/order"
+	"github.com/LiuKaHo/driverModule/dao/ent/product"
 
 	"entgo.io/ent/dialect"
 	"entgo.io/ent/dialect/sql"

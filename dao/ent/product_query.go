@@ -4,8 +4,6 @@ package ent
 
 import (
 	"context"
-	"driverModule/dao/ent/predicate"
-	"driverModule/dao/ent/product"
 	"errors"
 	"fmt"
 	"math"
@@ -13,6 +11,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
+	"github.com/LiuKaHo/driverModule/dao/ent/predicate"
+	"github.com/LiuKaHo/driverModule/dao/ent/product"
 )
 
 // ProductQuery is the builder for querying Product entities.

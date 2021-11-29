@@ -1,7 +1,9 @@
 package schema
 
-import "entgo.io/ent"
-import "entgo.io/ent/schema/field"
+import (
+	"entgo.io/ent"
+	"entgo.io/ent/schema/field"
+)
 
 // Order holds the schema definition for the Order entity.
 type Order struct {

@@ -4,9 +4,10 @@ package enttest
 
 import (
 	"context"
-	"driverModule/dao/ent"
+
+	"github.com/LiuKaHo/driverModule/dao/ent"
 	// required by schema hooks.
-	_ "driverModule/dao/ent/runtime"
+	_ "github.com/LiuKaHo/driverModule/dao/ent/runtime"
 
 	"entgo.io/ent/dialect/sql/schema"
 )

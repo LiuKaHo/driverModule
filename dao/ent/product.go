@@ -3,11 +3,11 @@
 package ent
 
 import (
-	"driverModule/dao/ent/product"
 	"fmt"
 	"strings"
 
 	"entgo.io/ent/dialect/sql"
+	"github.com/LiuKaHo/driverModule/dao/ent/product"
 )
 
 // Product is the model entity for the Product schema.

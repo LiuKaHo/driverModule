@@ -3,11 +3,11 @@
 package ent
 
 import (
-	"driverModule/dao/ent/order"
 	"fmt"
 	"strings"
 
 	"entgo.io/ent/dialect/sql"
+	"github.com/LiuKaHo/driverModule/dao/ent/order"
 )
 
 // Order is the model entity for the Order schema.

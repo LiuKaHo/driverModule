@@ -4,12 +4,12 @@ package ent
 
 import (
 	"context"
-	"driverModule/dao/ent/product"
 	"errors"
 	"fmt"
 
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
+	"github.com/LiuKaHo/driverModule/dao/ent/product"
 )
 
 // ProductCreate is the builder for creating a Product entity.

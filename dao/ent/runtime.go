@@ -3,8 +3,8 @@
 package ent
 
 import (
-	"driverModule/dao/ent/order"
-	"driverModule/dao/ent/schema"
+	"github.com/LiuKaHo/driverModule/dao/ent/order"
+	"github.com/LiuKaHo/driverModule/dao/ent/schema"
 )
 
 // The init function reads all schema descriptors with runtime code

@@ -4,11 +4,12 @@ package ent
 
 import (
 	"context"
-	"driverModule/dao/ent/order"
-	"driverModule/dao/ent/predicate"
-	"driverModule/dao/ent/product"
 	"fmt"
 	"sync"
+
+	"github.com/LiuKaHo/driverModule/dao/ent/order"
+	"github.com/LiuKaHo/driverModule/dao/ent/predicate"
+	"github.com/LiuKaHo/driverModule/dao/ent/product"
 
 	"entgo.io/ent"
 )

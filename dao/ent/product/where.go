@@ -3,9 +3,8 @@
 package product
 
 import (
-	"driverModule/dao/ent/predicate"
-
 	"entgo.io/ent/dialect/sql"
+	"github.com/LiuKaHo/driverModule/dao/ent/predicate"
 )
 
 // ID filters vertices based on their ID field.

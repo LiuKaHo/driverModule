@@ -4,8 +4,6 @@ package ent
 
 import (
 	"context"
-	"driverModule/dao/ent/order"
-	"driverModule/dao/ent/predicate"
 	"errors"
 	"fmt"
 	"math"
@@ -13,6 +11,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
+	"github.com/LiuKaHo/driverModule/dao/ent/order"
+	"github.com/LiuKaHo/driverModule/dao/ent/predicate"
 )
 
 // OrderQuery is the builder for querying Order entities.

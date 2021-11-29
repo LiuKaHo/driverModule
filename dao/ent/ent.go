@@ -3,13 +3,13 @@
 package ent
 
 import (
-	"driverModule/dao/ent/order"
-	"driverModule/dao/ent/product"
 	"errors"
 	"fmt"
 
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
+	"github.com/LiuKaHo/driverModule/dao/ent/order"
+	"github.com/LiuKaHo/driverModule/dao/ent/product"
 )
 
 // ent aliases to avoid import conflicts in user's code.

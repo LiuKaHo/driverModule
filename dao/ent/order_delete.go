@@ -4,13 +4,13 @@ package ent
 
 import (
 	"context"
-	"driverModule/dao/ent/order"
-	"driverModule/dao/ent/predicate"
 	"fmt"
 
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
+	"github.com/LiuKaHo/driverModule/dao/ent/order"
+	"github.com/LiuKaHo/driverModule/dao/ent/predicate"
 )
 
 // OrderDelete is the builder for deleting a Order entity.
