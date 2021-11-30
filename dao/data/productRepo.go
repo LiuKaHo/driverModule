@@ -6,19 +6,19 @@ import (
 	"github.com/go-kratos/kratos/v2/log"
 )
 
-type productRepo struct {
+type ProductRepo struct {
 	data *Data
 	log  log.Logger
 }
 
 func NewProductRepo(data *Data, log log.Logger) biz.ProductRepo {
-	return &productRepo{
+	return &ProductRepo{
 		data: data,
 		log:  log,
 	}
 }
 
-func (productRepo *productRepo) ListProduct(ctx context.Context) ([]*biz.Product, error) {
+func (productRepo *ProductRepo) ListProduct(ctx context.Context) ([]*biz.Product, error) {
 	res, err := productRepo.data.db.Product.Query().All(ctx)
 	if err != nil {
 		return nil, err
