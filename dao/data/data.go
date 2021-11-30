@@ -6,6 +6,7 @@ import (
 	"github.com/LiuKaHo/driverModule/conf"
 	"github.com/LiuKaHo/driverModule/dao/ent"
 	"github.com/go-kratos/kratos/v2/log"
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/google/wire"
 )
 
