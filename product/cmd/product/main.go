@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"github.com/LiuKaHo/driverModule/conf"
 	"os"
 
 	"github.com/go-kratos/kratos/v2"
@@ -11,7 +12,6 @@ import (
 	"github.com/go-kratos/kratos/v2/middleware/tracing"
 	"github.com/go-kratos/kratos/v2/transport/grpc"
 	"github.com/go-kratos/kratos/v2/transport/http"
-	"product/internal/conf"
 )
 
 // go build -ldflags "-X main.Version=x.y.z"
@@ -27,7 +27,7 @@ var (
 )
 
 func init() {
-	flag.StringVar(&flagconf, "conf", "../../configs", "config path, eg: -conf config.yaml")
+	flag.StringVar(&flagconf, "conf", "../configs", "config path, eg: -conf config.yaml")
 }
 
 func newApp(logger log.Logger, hs *http.Server, gs *grpc.Server) *kratos.App {

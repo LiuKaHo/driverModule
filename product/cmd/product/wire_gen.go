@@ -7,11 +7,11 @@
 package main
 
 import (
+	"github.com/LiuKaHo/driverModule/conf"
+	"github.com/LiuKaHo/driverModule/dao/data"
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/log"
 	"product/internal/biz"
-	"product/internal/conf"
-	"product/internal/data"
 	"product/internal/server"
 	"product/internal/service"
 )
@@ -24,11 +24,12 @@ func initApp(confServer *conf.Server, confData *conf.Data, logger log.Logger) (*
 	if err != nil {
 		return nil, nil, err
 	}
-	greeterRepo := data.NewGreeterRepo(dataData, logger)
-	greeterUsecase := biz.NewGreeterUsecase(greeterRepo, logger)
-	greeterService := service.NewGreeterService(greeterUsecase, logger)
-	httpServer := server.NewHTTPServer(confServer, greeterService, logger)
-	grpcServer := server.NewGRPCServer(confServer, greeterService, logger)
+	productRepo := data.NewProductRepo(dataData, logger)
+
+	productUserCase := biz.NewProductUserCase(productRepo, logger)
+	productService := service.NewProductService(productUserCase, logger)
+	httpServer := server.NewHTTPServer(confServer, productService, logger)
+	grpcServer := server.NewGRPCServer(confServer, productService, logger)
 	app := newApp(logger, httpServer, grpcServer)
 	return app, func() {
 		cleanup()
